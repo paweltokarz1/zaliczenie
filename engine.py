@@ -26,7 +26,7 @@ class Engine:
         print(f"Długość wylosowanego słowa to: {len(random_word)}")
         while True:
             while stats.chances > 0:
-                word_from_user = input("Podaj slowo, ktore jest izogramem: ")
+                word_from_user = input(str("Podaj slowo, ktore jest izogramem: "))
                 self.check_bulls_cows(word_from_user)
                 if not validator.is_isogram(random_word):
                     print("Słowo nie jest izogramem")
